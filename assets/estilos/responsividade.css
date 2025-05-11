@@ -23,7 +23,7 @@
 @media (max-width:900px){
     .menu-icon{
     display: flex;
-    
+    transition:0.4s;
     color: var(--cor4);
     z-index: 1;
     }

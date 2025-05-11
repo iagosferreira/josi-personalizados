@@ -1,19 +1,31 @@
 var menuIcon = document.querySelector('.menu-icon');
-var aClick = document.querySelector('.aclick, .aclick, .aclick, .aclick');
+var ulClicks = document.querySelectorAll('.ulclick1, .ulclick2, .ulclick3, .ulclick4');
+ulClicks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (ul.classList.contains('ativo')) {
+            ul.classList.remove('ativo');
+            document.querySelector('.menu-icon img').src = 'assets/imgs/menu.png';
+        }
+    });
+});
 var ul = document.querySelector('.nav-links');
 
 menuIcon.addEventListener('click', ()=>{
     if (ul.classList.contains('ativo')){
         ul.classList.remove('ativo');
-        document.querySelector('.menu-icon img').src = 'assetts/imgs/menu.png'
+        document.querySelector('.menu-icon img').src = 'assets/imgs/menu.png'
     }else{
         ul.classList.add('ativo');
         document.querySelector('.menu-icon img').src = 'assets/imgs/close.png'
     }
 });
 
-aClick.addEventListener('aclick', ()=>{
+ulClick.addEventListener('click', ()=>{
     if(ul.classList.contains('ativo')){
         ul.classList.remove('ativo');
+        document.querySelector('.menu-icon img').src = 'assets/imgs/menu.png';
+    }else{
+        ul.classList.add('ativo');
+        document.querySelector('.menu-icon img').src = 'assets/imgs/menu.png'
     }
 })
