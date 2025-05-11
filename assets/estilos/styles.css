@@ -10,12 +10,14 @@
     font-family: "Poppins";
     list-style: none;
     text-decoration: none;
+    
 }
 :root{
     --cor1: #f9e7fd;
     --cor2: #8437bf;
     --cor3: #f5a8e6;
     --cor4: #151515;
+    --cor5: #551A8B;
     --font-destaque: 'Dacherry';
     --font-padrao: "Poppins";
 }
@@ -36,9 +38,20 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 30px;
+}
+.nav-menu a{
+    display: flex;
+    align-items: center;
+    font-family: var(--font-destaque);
 }
 .nav-menu a img{
-    width: 350px;
+    width: 45px;
+}
+.nav-menu span{
+    font-family: var(--font-destaque);
+    color: #9834C4;
+    font-size: 30px;
 }
 /* links */
 .links{
@@ -47,6 +60,9 @@ body{
     height: 50px;
     display: flex;
     align-items: center;  
+}
+.logo a{  
+    color: var(--cor5);
 }
 .nav-links{
     display: flex;
@@ -59,7 +75,7 @@ body{
 }
 .nav-links a{
     transition: .4s;
-    color: #151515;
+    color: var(--cor5);
 }
 .nav-links a:hover{
     font-size: 19px;
@@ -74,6 +90,7 @@ body{
     padding: 8px;
     border-radius: 8px;
     transition: .4s;
+    cursor: pointer;
 }
 .nav-links button:hover{
     font-size: 19px;
