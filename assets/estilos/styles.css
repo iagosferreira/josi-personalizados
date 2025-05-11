@@ -21,14 +21,27 @@
     --font-destaque: 'Dacherry';
     --font-padrao: "Poppins";
 }
-body{
-    background-color: var(--cor1);
-}
+/* tags reutilizaveis */
 .container{
     max-width: 1440px;
     padding: 0 5%;
     margin: 0 auto;
 }
+.padrao-btn{
+    border: none;
+    background-color: var(--cor2);
+    color: var(--cor1);
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* end tags reutilizaveis */
+body{
+    background-color: var(--cor1);
+    height: 10000px;
+}
+
 #menu{
     padding: 10px 2px;
     background-color: var(--cor3);
@@ -99,3 +112,51 @@ body{
     display: none;
 }
 /* end links */
+/* main */
+.tela1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+.main-img img{
+    width: 40vw;
+}
+.main-text{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.main-text h1, .main-text span{
+    font-family: var(--font-destaque);
+    font-size: 3.9vw;
+}
+.main-text h1{
+    color: var(--cor4);
+}
+ h1 .span-h1{
+    color: var(--cor2);
+}
+.main-text p{
+    color: var(--cor4);
+    width: 28vw;
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: justify;
+}
+.buttons-tela1{
+    display: flex;
+    gap: 10px;
+}
+.btn-sobre{
+    border: 1.5px solid var(--cor4);
+    color: var(--cor4);
+    background: none;
+    font-weight: 400;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}

@@ -23,7 +23,7 @@
 @media (max-width:900px){
     .menu-icon{
     display: flex;
-    transition:0.4s;
+    transition:0.6s;
     color: var(--cor4);
     z-index: 1;
     }
@@ -36,10 +36,10 @@
         display: block;
     }
     .nav-links{
+        transition: 0.4s;
         position: fixed;
         top: 0;
-        left: 100%;
-        background-color: var(--cor2);
+        background: linear-gradient(to bottom left, #f5a8e6 0%, #8437bf 70%, #8437bf 100%);
         right: 0;
         display: flex;
         flex-direction: column;
@@ -47,6 +47,7 @@
         gap: 55px;
         width: 100vw;
         height: 100vh;
+        clip-path: circle(100px at 100% -15%);
     }
     .nav-links a{
         color: var(--cor1);
@@ -77,5 +78,34 @@
     .ativo{
         position: fixed;
         left: 0;
+        clip-path: circle(1500px at 100% -15%);
+    }
+    .tela1{
+        flex-direction: column-reverse;
+    }
+    .main-img img{
+    width: 70vw;
+    margin-left: -40px;
+}
+    .main-text{
+        text-align: center;
+    }
+   .main-text h1, .main-text span {
+        font-size: 10vw;
+    }
+    .main-text p{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+    .buttons-tela1{
+        margin: 8px auto 0 auto;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .buttons-tela1 .btn-sobre{
+        width: 60vw;
     }
     }
